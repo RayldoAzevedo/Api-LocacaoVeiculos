@@ -12,7 +12,8 @@ import com.projeto.web.expoveiculos.service.VeiculoService;
 import com.projeto.web.expoveiculos.util.VeiculoException;
 
 @RestController
-@CrossOrigin(origins = "", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000/", maxAge = 3600)
+@RequestMapping("/")
 public class VeiculoController {
 
     private VeiculoService veiculoService;

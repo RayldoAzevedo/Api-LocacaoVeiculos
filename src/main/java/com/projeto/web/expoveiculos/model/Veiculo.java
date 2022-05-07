@@ -1,5 +1,7 @@
 package com.projeto.web.expoveiculos.model;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 import java.io.File;
 import java.util.Date;
@@ -14,6 +16,19 @@ public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idVeiculo;
+
+    @Lob
+    @Type( type = "org.hibernate.type.TextType")
+    private String someString;
+
+    public String getSomeString() {
+        return someString;
+    }
+
+    public void setSomeString(String someString) {
+        this.someString = someString;
+    }
+
     @Column(name = "foto")
     private String  foto;
 
@@ -36,12 +51,6 @@ public class Veiculo {
     private String  marca;
     @Column(name = "ano")
     private Date    ano;
-    @Column(name = "cor")
-    private String  cor;
-    @Column(name = "categoria")
-    private String  Categoria;
-    @Column(name = "numerodeportas")
-    private int     numeroDePortas;
     @Column(name = "sobre")
     private String  sobre;
     @Column(name = "valorestimado")
@@ -98,30 +107,6 @@ public class Veiculo {
 
     public void setAno(Date ano) {
         this.ano = ano;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public String getCategoria() {
-        return Categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        Categoria = categoria;
-    }
-
-    public int getNumeroDePortas() {
-        return numeroDePortas;
-    }
-
-    public void setNumeroDePortas(int numeroDePortas) {
-        this.numeroDePortas = numeroDePortas;
     }
 
     public String getSobre() {
