@@ -17,18 +17,6 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idVeiculo;
 
-    @Lob
-    @Type( type = "org.hibernate.type.TextType")
-    private String someString;
-
-    public String getSomeString() {
-        return someString;
-    }
-
-    public void setSomeString(String someString) {
-        this.someString = someString;
-    }
-
     @Column(name = "foto")
     private String  foto;
 

@@ -12,7 +12,7 @@ import com.projeto.web.expoveiculos.service.VeiculoService;
 import com.projeto.web.expoveiculos.util.VeiculoException;
 
 @RestController
-@CrossOrigin(origins = "off", maxAge = 3600)
+@CrossOrigin(origins = "https://expo-veiculos.vercel.app", maxAge = 3600)
 @RequestMapping("/")
 public class VeiculoController {
 
