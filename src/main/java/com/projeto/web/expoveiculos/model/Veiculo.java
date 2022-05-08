@@ -38,7 +38,7 @@ public class Veiculo {
     @Column(name = "marca")
     private String  marca;
     @Column(name = "ano")
-    private Date    ano;
+    private String    ano;
     @Column(name = "sobre")
     private String  sobre;
     @Column(name = "valorestimado")
@@ -89,11 +89,11 @@ public class Veiculo {
         this.marca = marca;
     }
 
-    public Date getAno() {
+    public String getAno() {
         return ano;
     }
 
-    public void setAno(Date ano) {
+    public void setAno(String ano) {
         this.ano = ano;
     }
 
