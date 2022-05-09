@@ -85,8 +85,8 @@ public class VeiculoController {
 
 
     /**
-     * Metodo que exclui usuario pelo id
-     * @param id id do usuario a ser excluido
+     * Metodo que exclui veiculo pelo id
+     * @param id id do veiculos a ser excluido
      */
     @DeleteMapping(value = "excluir-veiculo/{id}")
     public void excluir(@PathVariable Integer id){

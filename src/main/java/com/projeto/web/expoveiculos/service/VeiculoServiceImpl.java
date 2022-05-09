@@ -71,7 +71,7 @@ public class VeiculoServiceImpl implements VeiculoService{
     @Override
     public void alterar(Veiculo veiculo) {
         try {
-            repository.save(veiculo);
+            this.repository.save(veiculo);
         }
         catch (Exception e){
             throw new VeiculoException("Não foi possível alterar o veiculo: " + veiculo.getIdVeiculo() + "! :->" + e.getMessage());
@@ -85,7 +85,7 @@ public class VeiculoServiceImpl implements VeiculoService{
     @Override
     public void excluir(Integer id) {
         try {
-            repository.deleteById(id);
+            this.repository.deleteById(id);
         }
         catch (Exception e){
             throw new VeiculoException("Não foi possível excluir o veiculo: "+id+"!");
