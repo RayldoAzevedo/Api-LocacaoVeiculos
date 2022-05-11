@@ -1,0 +1,51 @@
+
+• Comando para execução do projeto:
+ ./mvnw spring-boot:run
+
+• Abrir a página navegador:
+    http://localhost:8080/
+
+• Abrir a página swagger:
+ http://localhost:8080/swagger-ui.html
+
+ • URL Abrir com DB-H2:
+  http://localhost:8080/h2-console
+
+ • Configurações para banco de dados H2:
+ https://gasparbarancelli.com/post/banco-de-dados-h2-com-spring-boot
+
+ • Configurações para banco de dadosostgres:
+ 	## default connection pool
+	spring.datasource.hikari.connectionTimeout=20000
+	spring.datasource.hikari.maximumPoolSize=5
+	#adicionando heroku
+	## PostgreSQL
+	spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+	spring.datasource.username=postgres
+	spring.datasource.password=banco123
+
+	#drop n create table again, good for testing, comment this in production
+	spring.jpa.hibernate.ddl-auto=create
+
+
+• Deploy com Heroku:
+ 	https://dashboard.heroku.com/apps
+	https://devcenter.heroku.com/articles/heroku-cli
+
+-> comandos instalação e configuração
+
+npm install -g heroku : { instalar Heroku}
+heroku login -i : { adicionar email e password}
+heroku create api-expoveiculos : { criando repositorio heroku }
+
+-> comandos de gerenciamento e envio
+
+git remote -v : {ver o repositório Heroku}
+git add .
+git commimt -am "nome do repositorio"
+
+//adicionando bando postegres no heroku
+heroku addons:create heroku-postregresql:hobby-dev
+
+git push heroku master
+
