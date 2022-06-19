@@ -1,4 +1,4 @@
-package com.projeto.web.expoveiculos;
+package com.projeto.web.locacaoveiculos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

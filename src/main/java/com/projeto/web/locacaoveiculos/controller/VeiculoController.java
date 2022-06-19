@@ -1,4 +1,4 @@
-package com.projeto.web.expoveiculos.controller;
+package com.projeto.web.locacaoveiculos.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -7,9 +7,9 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
-import com.projeto.web.expoveiculos.model.Veiculo;
-import com.projeto.web.expoveiculos.service.VeiculoService;
-import com.projeto.web.expoveiculos.util.VeiculoException;
+import com.projeto.web.locacaoveiculos.model.Veiculo;
+import com.projeto.web.locacaoveiculos.service.VeiculoService;
+import com.projeto.web.locacaoveiculos.util.VeiculoException;
 
 @RestController
 @CrossOrigin(origins = "https://localhost:3000", maxAge = 3600)

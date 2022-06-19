@@ -1,12 +1,12 @@
-package com.projeto.web.expoveiculos.controller;
+package com.projeto.web.locacaoveiculos.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.projeto.web.expoveiculos.model.Usuario;
-import com.projeto.web.expoveiculos.service.UsuarioService;
-import com.projeto.web.expoveiculos.util.UsuarioException;
+import com.projeto.web.locacaoveiculos.model.Usuario;
+import com.projeto.web.locacaoveiculos.service.UsuarioService;
+import com.projeto.web.locacaoveiculos.util.UsuarioException;
 
 import java.util.List;
 

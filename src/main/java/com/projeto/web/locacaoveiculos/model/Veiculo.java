@@ -1,4 +1,4 @@
-package com.projeto.web.expoveiculos.model;
+package com.projeto.web.locacaoveiculos.model;
 import javax.persistence.*;
 @Entity
 @Table(name = "veiculos")

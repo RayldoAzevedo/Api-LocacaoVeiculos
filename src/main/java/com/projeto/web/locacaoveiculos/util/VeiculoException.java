@@ -1,4 +1,4 @@
-package com.projeto.web.expoveiculos.util;
+package com.projeto.web.locacaoveiculos.util;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 

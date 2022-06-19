@@ -1,8 +1,8 @@
-package com.projeto.web.expoveiculos.service;
+package com.projeto.web.locacaoveiculos.service;
 
 import java.util.List;
 
-import com.projeto.web.expoveiculos.model.Usuario;
+import com.projeto.web.locacaoveiculos.model.Usuario;
 
 public interface UsuarioService {
     public Usuario incluir(Usuario usuario);

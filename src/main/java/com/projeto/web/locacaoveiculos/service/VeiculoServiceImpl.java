@@ -1,8 +1,8 @@
-package com.projeto.web.expoveiculos.service;
+package com.projeto.web.locacaoveiculos.service;
 
-import com.projeto.web.expoveiculos.model.Veiculo;
-import com.projeto.web.expoveiculos.persistence.VeiculoRepository;
-import com.projeto.web.expoveiculos.util.VeiculoException;
+import com.projeto.web.locacaoveiculos.model.Veiculo;
+import com.projeto.web.locacaoveiculos.persistence.VeiculoRepository;
+import com.projeto.web.locacaoveiculos.util.VeiculoException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import javax.transaction.Transactional;

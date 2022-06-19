@@ -1,6 +1,6 @@
-package com.projeto.web.expoveiculos.persistence;
+package com.projeto.web.locacaoveiculos.persistence;
 import org.springframework.data.repository.CrudRepository;
-import com.projeto.web.expoveiculos.model.*;
+import com.projeto.web.locacaoveiculos.model.*;
 
 
 

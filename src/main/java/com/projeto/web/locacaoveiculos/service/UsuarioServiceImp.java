@@ -1,11 +1,11 @@
-package com.projeto.web.expoveiculos.service;
+package com.projeto.web.locacaoveiculos.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.projeto.web.expoveiculos.model.Usuario;
-import com.projeto.web.expoveiculos.persistence.UsuarioRepository;
-import com.projeto.web.expoveiculos.util.UsuarioException;
+import com.projeto.web.locacaoveiculos.model.Usuario;
+import com.projeto.web.locacaoveiculos.persistence.UsuarioRepository;
+import com.projeto.web.locacaoveiculos.util.UsuarioException;
 
 import javax.transaction.Transactional;
 import java.util.List;

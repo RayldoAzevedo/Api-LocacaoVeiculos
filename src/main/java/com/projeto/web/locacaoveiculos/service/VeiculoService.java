@@ -1,5 +1,5 @@
-package com.projeto.web.expoveiculos.service;
-import com.projeto.web.expoveiculos.model.*;
+package com.projeto.web.locacaoveiculos.service;
+import com.projeto.web.locacaoveiculos.model.*;
 
 import java.util.List;
 
