@@ -1,10 +1,5 @@
 package com.projeto.web.expoveiculos.model;
-
-import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
-import java.io.File;
-import java.util.Date;
 @Entity
 @Table(name = "veiculos")
 public class Veiculo {
@@ -17,33 +12,16 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idVeiculo;
 
-    @Column(name = "foto")
-    private String  foto;
-
-    @Column(name = "iamgem")
-    private File image;
-
-    public File getImage() {
-        return image;
-    }
-
-    public void setImage(File image) {
-        this.image = image;
-    }
-
-    @Column(name = "propritario")
-    private String  proprietario;
+    @Column(name = "km")
+    private String  km;
     @Column(name = "modelo")
     private String  modelo;
     @Column(name = "marca")
     private String  marca;
-    @Column(name = "ano")
-    private String    ano;
-    @Column(name = "sobre")
-    private String  sobre;
-    @Column(name = "valorestimado")
-    private float   valorEstimado;
-
+    @Column(name = "placa")
+    private String  placa;
+    @Column(name = "valor")
+    private Double  valor;
 
     /**
      * METODOS PUBLICOS
@@ -55,22 +33,6 @@ public class Veiculo {
 
     public void setIdVeiculo(Integer idVeiculo) {
         this.idVeiculo = idVeiculo;
-    }
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
-    public String getProprietario() {
-        return proprietario;
-    }
-
-    public void setProprietario(String proprietario) {
-        this.proprietario = proprietario;
     }
 
     public String getModelo() {
@@ -89,27 +51,27 @@ public class Veiculo {
         this.marca = marca;
     }
 
-    public String getAno() {
-        return ano;
+    public String getKm() {
+        return km;
     }
 
-    public void setAno(String ano) {
-        this.ano = ano;
+    public void setKm(String km) {
+        this.km = km;
     }
 
-    public String getSobre() {
-        return sobre;
+    public String getPlaca() {
+        return placa;
     }
 
-    public void setSobre(String sobre) {
-        this.sobre = sobre;
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
-    public float getValorEstimado() {
-        return valorEstimado;
+    public Double getValor() {
+        return valor;
     }
 
-    public void setValorEstimado(float valorEstimado) {
-        this.valorEstimado = valorEstimado;
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 }

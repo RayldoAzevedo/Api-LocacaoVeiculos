@@ -12,8 +12,7 @@ import com.projeto.web.expoveiculos.service.VeiculoService;
 import com.projeto.web.expoveiculos.util.VeiculoException;
 
 @RestController
-@CrossOrigin(origins = "https://expo-veiculos.vercel.app", maxAge = 3600)
-//@CrossOrigin(origins = "https://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "https://localhost:3000", maxAge = 3600)
 @RequestMapping("/")
 public class VeiculoController {
 
@@ -34,7 +33,7 @@ public class VeiculoController {
      */
     @GetMapping(value = "/")
     public String text(){
-        return "Projeto Web Final - Banco de dados H2: Veiculos";
+        return "Projeto Web Final - Banco de dados MySql: Locação de Veiculos";
     }
 
     /**
